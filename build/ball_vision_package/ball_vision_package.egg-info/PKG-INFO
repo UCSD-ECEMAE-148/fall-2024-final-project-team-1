@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: ball-vision-package
+Version: 0.0.1
+Summary: A ROS 2 package for ball tracking using OpenCV and DepthAI
+Home-page: UNKNOWN
+Maintainer: Your Name
+Maintainer-email: your.email@example.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
