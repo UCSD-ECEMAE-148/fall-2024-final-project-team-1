@@ -1,5 +1,5 @@
 # ROS 2 Package Installation and Usage Instructions
-
+__ README.md is intended to be a high level overview of our project. This doucment is intended as a more technical documentation for convenience and instruction of the user__
 ## Initial Setup
 Before we get to any instruction/recommendations for using our code, we need to clone the repo in ros2_ws/src. 
 
