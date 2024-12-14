@@ -34,6 +34,12 @@ Now, when launching ucsd_robocar_nav2_pkg all_nodes.launch.py, you will use our 
 ## Ball Vision Package Instruction:
 __Note: Our package uses GUI features. As such, you must enable X forwarding on the Jetson, but outside the docker container. Before entering the container, type ```xhost +``` in your terminal. You may need to change the value of the display variable in the container, using ```export DISPLAY=localhost:XX.0```, where ```XX``` is some 2 digit number.__
 
+__ANOTHER IMPORTANT NOTE: You must clone the ```depthai-python``` repository in order to use the YOLO model upon which our tracking node is built.__
+In your Docker container's terminal, and in the ```projects``` directory:
+```bash
+git clone https://github.com/luxonis/depthai-python
+```
+
 Before launching the package, one change must be made to the VESC twist node
 
 In your terminal:
