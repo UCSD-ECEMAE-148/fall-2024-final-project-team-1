@@ -70,4 +70,9 @@ Upon measuring consecutive, decreasing ball depth values, the node will publish 
 
 The variable ```throttle``` is passed a float. We did not have a chance to calibrate it, but it is a multiplicative coefficient to the default rpm value found in ```vesc_twist_node.py```. A value of ```5.0``` is a moderate speed, capable of deflecting slow or moderately fast kicks. We have tested it in a range from ```3.0``` to ```10.0```. The variable ```Kp``` is a proportional control term, multiplying the measured angle between the ball and car before it is published as ```cmd_vel_msg.angular.z```.
 
+Compile any changes you make by running the following command in ```ros2_ws```
+```bash
+colcon build --packages-select ball_vision_package
+```
+
 
