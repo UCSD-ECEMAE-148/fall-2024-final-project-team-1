@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<h1 align="center">UCSDrive! Autonomous Campus Rideshare</h1>
+<h1 align="center">Autonomous Penalty Kick Goalie</h1>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -58,8 +58,6 @@ Team 1 Fall 2024
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
-# Autonomous Penalty Kick Goalie
 
 ## Overview
 
