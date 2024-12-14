@@ -61,7 +61,7 @@ Team 1 Fall 2024
 
 ## Overview
 
-This project focuses on developing a robot car capable of acting as an autonomous penalty kick goalie. Leveraging computer vision (CV) and a DepthAI framework, the robot detects and tracks a soccer ball, calculates its spatial coordinates, and responds to intercept the ball. By combining a PID controller with ROS2 nodes, the system outputs steering and throttle commands to the vehicle's VESC (Variable Electronic Speed Controller) for precise control.
+This project focuses on developing a robot car capable of acting as an autonomous penalty kick goalie. Leveraging computer vision (CV) and a DepthAI framework, the robot detects and tracks a soccer ball, calculates its spatial coordinates, and responds to intercept the ball. Using a YOLO object detection model, the system calculates steering and throttle control inputs, and publishes them to the vehicle's VESC (Variable Electronic Speed Controller) using ROS 2.
 
 ### **Key Features**
 - **Ball Tracking:** Detects and tracks the ball in real time using DepthAI and OpenCV algorithms.
