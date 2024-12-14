@@ -67,7 +67,7 @@ This project focuses on developing a robot car capable of acting as an autonomou
 - **Ball Tracking:** Detects and tracks the ball in real time using DepthAI and OpenCV algorithms.
 - **Depth and Angle Estimation:** Computes the ball's depth (distance) and horizontal angle relative to the robot.
 - **ROS2 Framework:** Publishes and subscribes to relevant data across custom ROS2 nodes for modular functionality.
-- **PID Control:** Implements a proportional-integral-derivative controller for accurate steering adjustments.
+- **Proportional and Bang-Bang Control:** Implements a proportional controller for accurate steering adjustments and bang-bang control for velocity inputs.
 - **Goalkeeper Behavior:** Waits for ball movement before executing intercept maneuvers, mimicking real penalty-kick rules.
 
 ---
@@ -136,7 +136,6 @@ The project leverages a modular architecture, where each node in the ROS2 framew
 - **DepthAI:** For object detection, depth estimation, and spatial tracking of the soccer ball.
 - **OpenCV:** To process image frames and detect circular objects.
 - **ROS2:** Middleware framework for data publishing and subscribing between nodes.
-- **PID Controller:** Ensures smooth steering adjustments for ball tracking.
 - **VESC:** Controls the robot's drivetrain, providing precise throttle and steering.
 
 ---
