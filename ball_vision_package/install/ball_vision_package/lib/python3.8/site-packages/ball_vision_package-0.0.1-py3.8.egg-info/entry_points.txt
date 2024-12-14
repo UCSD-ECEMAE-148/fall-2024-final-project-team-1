@@ -1,0 +1,4 @@
+[console_scripts]
+ball_tracker = ball_vision_package.ball_tracker_node:main
+yolo_tracker = ball_vision_package.yolo_node:main
+

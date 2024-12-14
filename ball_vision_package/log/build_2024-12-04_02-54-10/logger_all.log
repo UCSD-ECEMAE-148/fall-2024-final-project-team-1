@@ -1,0 +1,98 @@
+[0.759s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ball_vision_package']
+[0.760s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f826605e0>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['ball_vision_package'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f826605e0>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f82660c40>)
+[0.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.784s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.786s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.786s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.787s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.787s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/projects/ros2_ws/src/ball_vision_package'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.846s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'ball_vision_package'
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.847s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'cmake_args' from command line to 'None'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'cmake_target' from command line to 'None'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.925s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.926s] Level 5:colcon.colcon_core.verb:set package 'ball_vision_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.926s] DEBUG:colcon.colcon_core.verb:Building package 'ball_vision_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/projects/ros2_ws/src/ball_vision_package/build/ball_vision_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package', 'merge_install': False, 'path': '/home/projects/ros2_ws/src/ball_vision_package', 'symlink_install': False, 'test_result_base': None}
+[0.962s] WARNING:colcon.colcon_core.verb:Some selected packages are already built in one or more underlay workspaces:
+	'ball_vision_package' is in: /home/projects/ros2_ws/install/ball_vision_package
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding ball_vision_package
+
+This may be promoted to an error in a future release of colcon-core.
+[0.964s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.973s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.973s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/projects/ros2_ws/src/ball_vision_package' with build type 'ament_python'
+[0.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_vision_package', 'ament_prefix_path')
+[0.989s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/hook/ament_prefix_path.ps1'
+[0.992s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/hook/ament_prefix_path.dsv'
+[0.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/hook/ament_prefix_path.sh'
+[0.999s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.999s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.179s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/projects/ros2_ws/src/ball_vision_package'
+[2.183s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.184s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/projects/ros2_ws/src/ball_vision_package': PYTHONPATH=/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/ball_vision_package build --build-base /home/projects/ros2_ws/src/ball_vision_package/build/ball_vision_package/build install --prefix /home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package --record /home/projects/ros2_ws/src/ball_vision_package/build/ball_vision_package/install.log --single-version-externally-managed
+[5.650s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/projects/ros2_ws/src/ball_vision_package' returned '0': PYTHONPATH=/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base build/ball_vision_package build --build-base /home/projects/ros2_ws/src/ball_vision_package/build/ball_vision_package/build install --prefix /home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package --record /home/projects/ros2_ws/src/ball_vision_package/build/ball_vision_package/install.log --single-version-externally-managed
+[5.669s] Level 1:colcon.colcon_core.environment:checking '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package' for CMake module files
+[5.672s] Level 1:colcon.colcon_core.environment:checking '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package' for CMake config files
+[5.674s] Level 1:colcon.colcon_core.environment:checking '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/lib'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/bin'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/lib/pkgconfig/ball_vision_package.pc'
+[5.676s] Level 1:colcon.colcon_core.environment:checking '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/lib/python3.8/site-packages'
+[5.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('ball_vision_package', 'pythonpath')
+[5.678s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/hook/pythonpath.ps1'
+[5.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/hook/pythonpath.dsv'
+[5.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/hook/pythonpath.sh'
+[5.682s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ball_vision_package)
+[5.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/package.ps1'
+[5.688s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/package.dsv'
+[5.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/package.sh'
+[5.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/package.bash'
+[5.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/ball_vision_package/package.zsh'
+[5.698s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/projects/ros2_ws/src/ball_vision_package/install/ball_vision_package/share/colcon-core/packages/ball_vision_package)
+[5.699s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.701s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.767s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.768s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.774s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.774s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.785s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally with the following error: Autolaunch error: X11 initialization failed.
+
+[5.785s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.789s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/projects/ros2_ws/src/ball_vision_package/install/local_setup.ps1'
+[5.793s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/projects/ros2_ws/src/ball_vision_package/install/_local_setup_util_ps1.py'
+[5.798s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/projects/ros2_ws/src/ball_vision_package/install/setup.ps1'
+[5.808s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/projects/ros2_ws/src/ball_vision_package/install/local_setup.sh'
+[5.810s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/projects/ros2_ws/src/ball_vision_package/install/_local_setup_util_sh.py'
+[5.812s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/projects/ros2_ws/src/ball_vision_package/install/setup.sh'
+[5.822s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/projects/ros2_ws/src/ball_vision_package/install/local_setup.bash'
+[5.824s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/projects/ros2_ws/src/ball_vision_package/install/setup.bash'
+[5.834s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/projects/ros2_ws/src/ball_vision_package/install/local_setup.zsh'
+[5.835s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/projects/ros2_ws/src/ball_vision_package/install/setup.zsh'
