@@ -118,16 +118,16 @@ The project leverages a modular architecture, where each node in the ROS2 framew
 1. **```yolo_node.py```**
    - **Inputs:** Camera feed from OAK-D Lite.
    - **Measures:** 
-     - `Ball Depth` (distance in mm).
-     - `Ball Angle` (horizontal position in radians or degrees).
+     - Ball Depth: (distance in mm).
+     - Ball Angle: (horizontal angle between ball and camera in radians or degrees).
    - **Outputs:**
      - Twist messages to the ```\cmd_vel``` topic
      - ```linear.x``` messages represent throttle commands
      - ```angular.z``` messages represent servo commands. These message are Ball Angle data normalized between -1 and 1.
 
-2. **VESC Node**
+2. **```vesc_twist_node.py```**
    - **Inputs:** 
-     - `Throttle` and `Servo Angle` from the Controller Node.
+     - ```linear.x``` and ```angular.z``` messages from the ```yolo_node.py```.
    - **Outputs:**
      - Commands to the VESC for motor control.
 
@@ -161,7 +161,7 @@ __Detailed instructions can be found in ball_vision_info.md__
 1. Enter the ```src``` directory and clone the repository:
    ```bash
    cd src
-   git clone https://github.com/your-repo/penalty-kick-goalie.git](https://github.com/UCSD-ECEMAE-148/fall-2024-final-project-team-1/tree/main)
+   git clone https://github.com/UCSD-ECEMAE-148/fall-2024-final-project-team-1/tree/main
    cd ..
    ```
 2. Build the ROS2 workspace:
