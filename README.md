@@ -88,19 +88,15 @@ This project focuses on developing a robot car capable of acting as an autonomou
 ## **Project Goals**
 
 ### **Core Objectives**
-1. **Ball Detection and Tracking:**
+1. **Ball Tracking and Control:**
    - Implement a tracking node that uses DepthAI to:
-     - Detect a circular object (soccer ball) in the frame.
-     - Publish:
+     - Deploy a YOLO model directly to OAK-D Lite camera, detecting a soccer ball in frame.
+     - Measure:
        - `Ball Depth`: Average distance between the ball and the robot in millimeters.
        - `Ball Angle`: Horizontal offset angle from the robot's center.
-   - Display bounding boxes for visualization.
-
-2. **Reactive Control:**
-   - Implement a controller node that:
-     - Monitors the ball's movement (change in depth).
-     - Executes PID-based steering adjustments to keep the ball centered in the frame.
-     - Outputs throttle and steering commands to the VESC.
+   - Publish data to VESC BLDC Motor Controller:
+       - ```throttle``` variable via bang-bang controller.
+       - ```angle``` variable, represent's angular offset between ball and car, normalized between -1 and 1 using camera's horizontal FOV. 
 
 3. **Goalkeeper Rules:**
    - Ensure the robot remains stationary until the ball begins moving (mimicking real penalty-kick rules).
@@ -119,20 +115,17 @@ The project leverages a modular architecture, where each node in the ROS2 framew
 
 ### **Node Descriptions**
 
-1. **Track Node**
+1. **```yolo_node.py```**
    - **Inputs:** Camera feed from OAK-D Lite.
-   - **Outputs:** 
+   - **Measures:** 
      - `Ball Depth` (distance in mm).
      - `Ball Angle` (horizontal position in radians or degrees).
-
-2. **Controller Node**
-   - **Inputs:** 
-     - `Ball Depth` and `Ball Angle` from the Track Node.
    - **Outputs:**
-     - `Throttle`: Sends a signal to accelerate the vehicle when ball movement is detected.
-     - `Servo Angle`: Provides steering adjustments to align the robot with the ball.
+     - Twist messages to the ```\cmd_vel``` topic
+     - ```linear.x``` messages represent throttle commands
+     - ```angular.z``` messages represent servo commands. These message are Ball Angle data normalized between -1 and 1.
 
-3. **VESC Node**
+2. **VESC Node**
    - **Inputs:** 
      - `Throttle` and `Servo Angle` from the Controller Node.
    - **Outputs:**
@@ -152,23 +145,33 @@ The project leverages a modular architecture, where each node in the ROS2 framew
 
 ## **How to Run**
 
+__Detailed instructions can be found in ball_vision_info.md__
+
 ### **Prerequisites**
-- Install ROS2 (Humble or Foxy recommended).
+- Install ROS2 (Foxy recommended).
 - Set up the DepthAI SDK.
+  - In Docker container ```projects``` directory
+  ```bash
+  git clone https://github.com/luxonis/depthai-python
+  ```
 - Ensure the VESC is configured and calibrated.
 
 ### **Steps**
-1. Clone the repository:
+1. In Docker container, run ```source_ros2```
+1. Enter the ```src``` directory and clone the repository:
    ```bash
-   git clone https://github.com/your-repo/penalty-kick-goalie.git
-   cd penalty-kick-goalie
+   cd src
+   git clone https://github.com/your-repo/penalty-kick-goalie.git](https://github.com/UCSD-ECEMAE-148/fall-2024-final-project-team-1/tree/main)
+   cd ..
+   ```
 2. Build the ROS2 workspace:
    ```bash
-   colcon build
+   colcon build --packages-select ball_vision_package
+   ```
 3. Launch the system:
    ```bash
-   source install/setup.bash
-   ros2 launch goalie_system.launch.py
+   ros2 launch ball_vision_package ball_tracking.launch.py
+   ```
    
 ## **Future Improvements**
 
