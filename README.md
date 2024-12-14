@@ -23,38 +23,52 @@ Team 1 Fall 2024
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#team-members">Team Members</a></li>
-    <li><a href="#final-project">Final Project</a></li>
+    <li><a href="#overview">Overview</a>
       <ul>
-        <li><a href="#original-goals">Original Goals</a></li>
-          <ul>
-            <li><a href="#goals-we-met">Goals We Met</a></li>
-            <li><a href="#our-hopes-and-dreams">Our Hopes and Dreams</a></li>
-              <ul>
-                <li><a href="#stretch-goal-1">Stretch Goal 1</a></li>
-                <li><a href="#stretch-goal-2">Stretch Goal 2</a></li>
-              </ul>
-          </ul>
-        <li><a href="#final-project-documentation">Final Project Documentation</a></li>
+        <li><a href="#key-features">Key Features</a></li>
       </ul>
-    <li><a href="#robot-design">Robot Design </a></li>
+    </li>
+    <li><a href="#team-members">Team Members</a></li>
+    <li><a href="#project-goals">Project Goals</a>
       <ul>
-        <li><a href="#cad-parts">CAD Parts</a></li>
+        <li><a href="#core-objectives">Core Objectives</a></li>
+        <li><a href="#nice-to-have-features">Nice-to-Have Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#system-architecture">System Architecture</a>
+      <ul>
+        <li><a href="#node-descriptions">Node Descriptions</a></li>
+      </ul>
+    </li>
+    <li><a href="#technologies-used">Technologies Used</a></li>
+    <li><a href="#how-to-run">How to Run</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#steps">Steps</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-improvements">Future Improvements</a></li>
+    <li><a href="#final-project-documentation">Final Project Documentation</a></li>
+    <li><a href="#robot-design">Robot Design</a>
+      <ul>
+        <li><a href="#cad-parts">CAD Parts</a>
           <ul>
             <li><a href="#final-assembly">Final Assembly</a></li>
             <li><a href="#custom-designed-parts">Custom Designed Parts</a></li>
             <li><a href="#open-source-parts">Open Source Parts</a></li>
           </ul>
+        </li>
         <li><a href="#electronic-hardware">Electronic Hardware</a></li>
-        <li><a href="#software">Software</a></li>
+        <li><a href="#software">Software</a>
           <ul>
             <li><a href="#embedded-systems">Embedded Systems</a></li>
             <li><a href="#ros2">ROS2</a></li>
             <li><a href="#donkeycar-ai">DonkeyCar AI</a></li>
           </ul>
+        </li>
       </ul>
+    </li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#authors">Authors</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
