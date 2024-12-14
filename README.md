@@ -179,9 +179,8 @@ The project leverages a modular architecture, where each node in the ROS2 framew
 
 ### Final Project Documentation
 
-* [Final Project Proposal](https://docs.google.com/presentation/d/199oVWJiOSEHAjcmizN8rejuzU7rHNCNl4qY55uGqgxQ/edit?usp=sharing)
-* [Progress Update 2/29](https://github.com/kiers-neely/ucsd-mae-148-team-4/files/14469441/mae148-slides-update.pdf)
-* [Progress Update 3/7](https://github.com/kiers-neely/ucsd-mae-148-team-4/files/14547470/mae148-slides-update.2.pdf)
+* [Final Project Presentation](https://docs.google.com/presentation/d/1sWPAhDD-GJ9jYpHarSCKPhVNQmTzqOHTQWOG0NPXQyo/edit?usp=sharing)
+* [Progress Proposal](https://docs.google.com/presentation/d/1Lm3S6NN71KebaZToWxZiezmuwGJY3F4DBKpGaalPcTA/edit?usp=sharing)
 
 <!-- Early Quarter -->
 ## Robot Design
@@ -207,36 +206,30 @@ The project leverages a modular architecture, where each node in the ROS2 framew
 
 
 ### Electronic Hardware
-Below is a circuit diagram of the electronic hardware setup for the car.
+Circuit Diagram of the electronic hardware setup for the car.
 
 <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/6f7501ee-382a-4590-9c0a-f8ce738efec3" width="800" height="400" />
 
 
 ### Software
 #### Embedded Systems
-To program the Jetson Nano, we accessed the Jetson Nano through remote SSH connection to an embedded Linux system onboard and ran a docker container with all the necessary dependencies to run our packages. This allowed us to eliminate any incompatibility issues and to maximize resource efficiency on the Jetson. We used a variation of virtualization softwares including VMWare and WSL2 to build, test and launch our programs. 
+Our team utilized a wirless SSH to a Jetson Nano that contained a docker container with all the necessary packages and dependecies used to run our program in a ROS2 workspace. SSH was done via both Mac terminal and Windows PC with Virtual Machine.
 
 #### ROS2
-The base image pulled from Docker Hub for our project development contained the UCSD Robocar module ran on a Linux OS (Ubuntu 20.04). The Robocar module, consisting of several submodules using ROS/ROS2, was originally developed by Dominic Nightingale, a UC San Diego graduate student. His framework was built for use with a wide variety of sensors and actuation methods on scale autonomous vehicles, providing the ability to easily control a car-like robot while enabling the robot to simultaneously perform autonomous tasks.
+The Docker Images, which were provided to us and pulled from the Docker Hub, contained the UCSD Robocar Module along with the ROS/ROS2 submodules that we utilized during project prototyping and lane following.
+The UCSD Robocar Module, running on Linux OS (Ubuntu 20.04), was initially developed by Dominic Nightingale, a graduate student at the University of California, San Diego
 
 #### DonkeyCar AI
-For our early quarter course deliverables we used DonkeyCar to train a car in driving autonomous laps around a track in a simulated environment. We used Deep Learning to record visual data of driving on a simulated track and trained the car with the data to then race on a remote server. This helped us to prepare for training our physical car on an outdoor track with computer vision.
-
-<!-- Authors -->
-## Authors
-  - [@kiers-neely](https://github.com/kiers-neely)  
-
-<!-- Badges -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+We used DonkeyCar to train a car to drive autonomously around a track in both a simulated and real-world environment. By utilizing Deep Learning, our team was able to record visual data in the form of images and train the car based on the images that we collected over a local GPU Cluster provided by the UC San Diego supercomputer.
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-*Thank you to my teammates, Professor Jack Silberman, and our incredible TA Arjun Naageshwaran for an amazing Winter 2024 class!*
+*Thank you to Professor Jack Silberman and our incredible TA's Alexander, Winston, and Vivek for an amazing Fall 2024 class!*
 
 <!-- CONTACT -->
 ## Contact
 
-* Kiersten | kneely@ucsd.edu
-* Jacob | jacoberobison@gmail.com 
-* Joe | hjjeong@ucsd.edu
-* Damien | dcuara@ucsd.edu
+* Abhi Sachdeva | asachdeva@ucsd.edu
+* Evan Gibson | egibson@ucsd.edu
+* Charlie Lahey | clahey@ucsd.edu
+* Guatam Ganesh | gganesh@ucsd.edu
