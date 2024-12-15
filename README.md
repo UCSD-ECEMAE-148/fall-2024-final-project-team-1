@@ -13,7 +13,7 @@
 Team 1 Fall 2024
 </p>
 
-![image](images/7C66CA64-C422-4535-9721-F523EA8FAC5B.jpeg)
+<img src="images/ROBOCAR.jpg" alt="Logo" width="400" height="400">
 </div>
 
 
@@ -53,7 +53,6 @@ Team 1 Fall 2024
       <ul>
         <li><a href="#cad-parts">CAD Parts</a>
           <ul>
-            <li><a href="#final-assembly">Final Assembly</a></li>
             <li><a href="#custom-designed-parts">Custom Designed Parts</a></li>
             <li><a href="#open-source-parts">Open Source Parts</a></li>
           </ul>
@@ -95,7 +94,7 @@ This project focuses on developing a robot car capable of acting as an autonomou
 | Abhi Sachdeva     | Electrical Engineering     | Class of 2025 |
 | Charles Lahey     | Mechanical Engineering     | Class of 2025 |
 | Evan Gibson       | Mechanical Engineering, Ctrls & Robotics | Class of 2025 |
-| Gautam Ganesh     | Mechanical Engineering     | Class of 2026 |
+| Gautam Ganesh     | Mechanical Engineering     | Class of 2025 |
 
 ---
 
@@ -202,23 +201,19 @@ __Detailed instructions can be found in ball_vision_info.md__
 ## Robot Design
 
 ### CAD Parts
-#### Final Assembly
-<img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/aa99560c-a7ff-4ca0-b913-24ac75bb6eec" width="700" height="500" />
 
 #### Custom Designed Parts
 | Part | CAD Model | Designer |
 |------|--------------|------------|
-| Front Camera and LiDAR Mount | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/03902430-3625-4b19-ae1d-3ddaa344aa6a" width="300" height="300" /> | Kiersten
-| Side Camera and GNSS Puck Mount | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/ce443b16-9706-402e-be97-a78447cd391f" width="300" height="400" /> | Kiersten
-| Acrylic Base | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/2b4e5f76-f76d-4184-8922-512b867e38bc" width="300" height="300" /> | Damien
-| Side Paneling | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/d4d178f0-1912-44ac-8c8f-8a4d6e4bb17f" width="300" height="300" /> | Damien
+| Camera Mount | <img src="images/Camera Mount.png" width="300" height="477" /> | Evan
+| LiDAR Case | <img src="images/LiDAR Case.png" width="300" height="202" /> | Gautam
 
 
 #### Open Source Parts
 | Part | CAD Model | Source |
 |------|--------|-----------|
-| Jetson Nano Case | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/6770d099-0e2e-4f8d-8072-991f1b72971f" width="400" height="300" /> | [Thingiverse](https://www.thingiverse.com/thing:3778338) |
-| Oak-D Lite Case | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/bcc64c60-d67c-47af-b0cb-f46ac7b8a4c1" width="400" height="300" /> | [Thingiverse](https://www.thingiverse.com/thing:533649) |
+| Jetson Nano Case | <img src="images/Jetson Case.png" width="300" height="214" /> | [Thingiverse](https://www.thingiverse.com/thing:5237669) |
+| Oak-D Lite Case | <img src="images/Camera Case.png" width="300" height="250" /> | [Thingiverse](https://www.thingiverse.com/thing:3518410) |
 
 
 ### Electronic Hardware
@@ -235,12 +230,9 @@ Our team utilized a wirless SSH to a Jetson Nano that contained a docker contain
 The Docker Images, which were provided to us and pulled from the Docker Hub, contained the UCSD Robocar Module along with the ROS/ROS2 submodules that we utilized during project prototyping and lane following.
 The UCSD Robocar Module, running on Linux OS (Ubuntu 20.04), was initially developed by Dominic Nightingale, a graduate student at the University of California, San Diego
 
-#### DonkeyCar AI
-We used DonkeyCar to train a car to drive autonomously around a track in both a simulated and real-world environment. By utilizing Deep Learning, our team was able to record visual data in the form of images and train the car based on the images that we collected over a local GPU Cluster provided by the UC San Diego supercomputer.
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-*Thank you to Professor Jack Silberman and our incredible TA's Alexander, Winston, and Vivek for an amazing Fall 2024 class!*
+*Thank you to Professor Jack Silberman and our incredible TA's Alexander, Winston, and Vivek for an amazing Fall 2024 class! Thank you also to [@kiers-neely](https://github.com/kiers-neely) for the amazing README.md template.*
 
 <!-- CONTACT -->
 ## Contact
