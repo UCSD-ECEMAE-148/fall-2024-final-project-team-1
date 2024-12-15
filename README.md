@@ -195,7 +195,7 @@ __Detailed instructions can be found in ball_vision_info.md__
 ### Final Project Documentation
 
 * [Final Project Presentation](https://docs.google.com/presentation/d/1sWPAhDD-GJ9jYpHarSCKPhVNQmTzqOHTQWOG0NPXQyo/edit?usp=sharing)
-* [Progress Proposal](https://docs.google.com/presentation/d/1Lm3S6NN71KebaZToWxZiezmuwGJY3F4DBKpGaalPcTA/edit?usp=sharing)
+* [Project Proposal](https://docs.google.com/presentation/d/1Lm3S6NN71KebaZToWxZiezmuwGJY3F4DBKpGaalPcTA/edit?usp=sharing)
 
 <!-- Early Quarter -->
 ## Robot Design
