@@ -78,6 +78,12 @@ __Note: this document is intended as a high level overview of our project. For m
 
 This project focuses on developing a robot car capable of acting as an autonomous penalty kick goalie. Leveraging computer vision (CV) and a DepthAI framework, the robot detects and tracks a soccer ball, calculates its spatial coordinates, and responds to intercept the ball. Using a YOLO object detection model, the system calculates steering and throttle control inputs, and publishes them to the vehicle's VESC (Variable Electronic Speed Controller) using ROS 2.
 
+
+https://github.com/user-attachments/assets/aa7c9689-76cd-4d94-b4b3-79ad8f6959af    
+
+https://github.com/user-attachments/assets/875b85c0-d51c-4e8f-b1a5-8cdd7ea4fc41
+
+
 ### **Key Features**
 - **Ball Tracking:** Detects and tracks the ball in real time using DepthAI and OpenCV algorithms.
 - **Depth and Angle Estimation:** Computes the ball's depth (distance) and horizontal angle relative to the robot.
